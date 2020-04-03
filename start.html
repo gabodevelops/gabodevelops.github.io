@@ -83,19 +83,31 @@
                             <section id="about-section" class="doc-section">
                                 <h2 class="section-title">About the Asset</h2>
                                 <div id="step2-1"  class="section-block">
-                                    <h3 class="block-title">What is it?</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.
+                                    <h3 class="block-title">What's the Ultimate Grids Engine?</h3>
+                                    <p>The Ultimate Grids Engine it’s a <b>framework</b> for grid-based games, which <b>allows you to create and populate grids with tiles and entities quickly and effortless</b>. Provides entities system, grid based movement, range and path finding algorithms, attack system, interactive objects, character controller examples, and a lot more.
+                                        <b>Supports Rectangle, Hexagon and Isometric grids for both 2D and 3D games</b>.
                                     </p>
+                                    <div class="section-block">
+                                        <img style="max-width: 650px; height: auto;" class="img-fluid" src="assets/images/uge-images/image-1.jpg" alt="Ultimate Grids Engine" />
+                                    </div><!--//section-block-->
+                                    <!--
                                     <div class="code-block">
                                         <h6>Default code example:</h6>
                                         <p><code>bower install &lt;package&gt;</code></p>
                                         <p><code>npm install &lt;package&gt;</code></p>
-                                    </div><!--//code-block-->
+                                    </div>--><!--//code-block-->
                                 </div><!--//section-block-->
                                 <div id="step2-2"  class="section-block">
                                     <h3 class="block-title">Where do I start?</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                    <p>Well right now you're reading the documentation which means you're in the right place, <b>it is recommended you read through at least all the way to the "Basic Principles" section</b>. The engine is built with Unity good practices in mind. So if this is not your first Unity project, you’ll probably be ok on your own. And you can always go back here if something’s not clear.
+                                      <br>
+                                      <br>
+                                      That said, you can use the <b>menu on the left</b> to go to specific sections. <b>This documentation is functional</b>. If you have questions about the code itself, you'll rather have a look at the code’s comments directly, usually they cover most questions you might have.
+                                      <br>
+                                      <br>
+                                      And if all that doesn’t help, you can always use the <b>email or discord links</b> on the <a href="#introduction-section" target="_blank">introduction section</a>.
                                     </p>
+                                    <!--
                                     <div class="row">
                                         <div class="col-md-6 col-12">
                                             <h6>Un-ordered list example</h6>
@@ -129,7 +141,8 @@
         										<li>Praesent dapibus, neque id.</li>
         									</ol>
                                         </div>
-                                    </div><!--//row-->
+                                    </div>--><!--//row-->
+
                                 </div><!--//section-block-->
                                 <!--
                                 <div id="step3"  class="section-block">
@@ -144,19 +157,26 @@
                                 <h2 class="section-title">How to Install</h2>
                                 <div id="step3-1"  class="section-block">
                                     <h3 class="block-title">Introduction</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.
+                                    <p>Whatever version of Unity you’re using, remember to always <b>import the asset in an empty project</b>, so that the engine’s project settings get properly imported.
+                                      <br>
+                                      <br>
+                                      This asset relies on a few <b>unity packages</b> to function properly. On import this will very likely cause errors, that’s normal, and easily fixed. It’s all explained here.
                                     </p>
+                                    <!--
                                     <div class="code-block">
                                         <h6>Default code example:</h6>
                                         <p><code>bower install &lt;package&gt;</code></p>
-                                        <p><code>npm install &lt;package&gt;</code></p>
-                                    </div><!--//code-block-->
+                                        <p><code>npm install &lt;package&gt;</code></<p></p>>
+                                    </div>--><!--//code-block-->
                                 </div><!--//section-block-->
                                 <div id="step3-2"  class="section-block">
+
                                     <h3 class="block-title">Importing the Asset</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                    <p>
                                     </p>
+
                                     <div class="row">
+                                      <!--
                                         <div class="col-md-6 col-12">
                                             <h6>Un-ordered list example</h6>
                                             <ul class="list">
@@ -173,83 +193,131 @@
                             <li>Praesent dapibus, neque id.</li>
                           </ul>
                                         </div>
-                                        <div class="col-md-6 col-12">
-                                            <h6>Ordered list example</h6>
+                                      -->
+                                        <div class="col-md-12 col-12">
+                                            <h6>To import the asset correctly, follow these steps:</h6>
                                             <ol class="list">
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Aliquam tincidunt mauris.</li>
-                            <li>Ultricies eget vel aliquam libero.
+                            <!-- Import Step 1 -->
+                            <li>Create a new project from Unity Hub, pick the latest <b>stable</b> version of Unity as your Unity version, and 2D or 3D as the Template.</li>
+                            <!-- Import Step 2 -->
+                            <li>Go to the Asset Store window and <b>import</b> the asset (it has to be in an empty project, not an existing one).</li>
+                            <!-- Import Step 3 -->
+                            <li>You will be warned that importing the asset will <b>overwrite</b> your current project settings (that’s normal), click on Import.</li>
+                            <!-- Import Step 4 -->
+                            <li>Once this is complete, you’ll most likely get a prompt saying “This Unity Package has Package Manager <b>dependencies</b>”. This is also normal, click on “Install/Upgrade”.</li>
+                            <!-- Import Step 5 -->
+                            <li>After that you’ll get a list of the contents of the engine, don’t touch anything, and click on Import in the bottom right corner.</li>
+                            <!-- Import Step7 -->
+                            <li>Import will take a while. Once import is complete, a welcome window should prompt (Fig. bellow) if it shows any dependencies are missing please click on install for each one and you’re ready to use the engine. Have fun!</li>
+                            <!-- Import Step7 -->
+                            <li>In the case you're getting errors on a fresh install follow this last step, else ignore it.
                               <ul>
-                                <li>Turpis pulvinar</li>
-                                <li>Feugiat scelerisque</li>
-                                <li>Ut tincidunt</li>
+                                <li>Go to the Window -> Package Manager.</li>
+                                <li>Install the "2D Tilemap Editor" and "Post Processing" packages.</li>
                               </ul>
                             </li>
-                            <li>Pellentesque habitant morbi.</li>
-                            <li>Praesent dapibus, neque id.</li>
                           </ol>
                                         </div>
                                     </div><!--//row-->
+                                  <div align="center">
+                                    <img style="max-width: 450px; height: auto;" class="img-fluid" src="assets/images/uge-images/image-2-3.png" alt="Ultimate Grids Engine Welcome Window" />
+                                  </div>
                                 </div><!--//section-block-->
 
+                                <!--
                                 <div id="step3-3"  class="section-block">
                                     <h3 class="block-title">Install Dependencies</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.
                                     </p>
-                                </div><!--//section-block-->
+                                </div>--><!--//section-block-->
 
                             </section><!--//doc-section-->
 
                             <section id="structure-section" class="doc-section">
                                 <h2 class="section-title">Package Structure</h2>
+                                <div class="section-block">
+                                    <div class="row">
+                                        <div class="col-md-12 col-12">
+                                            <h6>The package structure is as follows:</h6>
+                                            <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-folder-open"></i></span>UltimateGridsEngine
+                              <ul class="fa-ul">
+                                <li><span class="fa-li"><i class="fas fa-folder" style ="color: Dodgerblue;"></i></span>Common</li>
+                                <li><span class="fa-li"><i class="fas fa-folder" style ="color: YellowGreen ;"></i></span>Demos</li>
+                                <li><span class="fa-li"><i class="fas fa-file"></i></span>License.txt</li>
+                                <li><span class="fa-li"><i class="fas fa-file"></i></span>Readme.txt</li>
+                              </ul>
+                              </li>
+                            </li>
+                          </ul>
+                                        </div>
+                                    </div><!--//row-->
+                                    <p>To keep everything organized, all package assets are contained in one root folder (’Character Movement
+                                      Fundamentals’). This ensures that your project files stay separated from the package’s files.
+                                      <br><br>
+                                      Inside the root folder, assets are separated by function.
+                                    </p>
+                                  </div><!--//section-block-->
+
                                 <div id="step2-1"  class="section-block">
                                     <h3 class="block-title">Common</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.
+                                    <p>This folder contains all scripts, meshes, animations, materials, fonts and prefabs that don't belong to any specific scene/demo.
                                     </p>
-                                    <div class="code-block">
-                                        <h6>Default code example:</h6>
-                                        <p><code>bower install &lt;package&gt;</code></p>
-                                        <p><code>npm install &lt;package&gt;</code></p>
-                                    </div><!--//code-block-->
+
+                                    <div class="row">
+                                        <div class="col-md-12 col-12">
+                                            <ul class="fa-ul">
+                                              <li><span class="fa-li"><i class="fas fa-folder-open" style ="color: Dodgerblue;"></i></span>Common</li>
+                                                <ul class="fa-ul">
+                                                  <li><span class="fa-li"><i class="fas fa-folder"></i></span>Animations</li>
+                                                  <li><span class="fa-li"><i class="fas fa-folder"></i></span>Editor</li>
+                                                  <li><span class="fa-li"><i class="fas fa-folder"></i></span>Fonts</li>
+                                                  <li><span class="fa-li"><i class="fas fa-folder"></i></span>Materials</li>
+                                                  <li><span class="fa-li"><i class="fas fa-folder"></i></span>Models</li>
+                                                  <li><span class="fa-li"><i class="fas fa-folder"></i></span>PostProfiles</li>
+                                                  <li><span class="fa-li"><i class="fas fa-folder"></i></span>Prefabs</li>
+                                                  <li><span class="fa-li"><i class="fas fa-folder"></i></span>Runtime</li>
+                                                  <li><span class="fa-li"><i class="fas fa-folder"></i></span>Shaders</li>
+                                                  <li><span class="fa-li"><i class="fas fa-folder"></i></span>Textures</li>
+                                                </ul>
+                                                </li>
+                                              </li>
+                                            </ul>
+                                        </div>
+                                    </div><!--//row-->
+
+                                    <p>
+                                      The assets are organized by their use - "Runtime" contains all of the core scripts of the engine, "Editor" contains the editor scripts such as drawers, the welcome window and grid brushes, etc.
+                                    </p>
+
                                 </div><!--//section-block-->
                                 <div id="step2-2"  class="section-block">
                                     <h3 class="block-title">Demos</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                    <p>This folder contains all the demos included in the engine. Usually each demo aims at showcasing <b>one or more particular aspects of the engine</b> or how you can achieve different types of games using the engine.
                                     </p>
                                     <div class="row">
-                                        <div class="col-md-6 col-12">
-                                            <h6>Un-ordered list example</h6>
-                                            <ul class="list">
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Aliquam tincidunt mauris.</li>
-                            <li>Ultricies eget vel aliquam libero.
-                              <ul>
-                                <li>Turpis pulvinar</li>
-                                <li>Feugiat scelerisque</li>
-                                <li>Ut tincidunt</li>
-                              </ul>
-                            </li>
-                            <li>Pellentesque habitant morbi.</li>
-                            <li>Praesent dapibus, neque id.</li>
-                          </ul>
-                                        </div>
-                                        <div class="col-md-6 col-12">
-                                            <h6>Ordered list example</h6>
-                                            <ol class="list">
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Aliquam tincidunt mauris.</li>
-                            <li>Ultricies eget vel aliquam libero.
-                              <ul>
-                                <li>Turpis pulvinar</li>
-                                <li>Feugiat scelerisque</li>
-                                <li>Ut tincidunt</li>
-                              </ul>
-                            </li>
-                            <li>Pellentesque habitant morbi.</li>
-                            <li>Praesent dapibus, neque id.</li>
-                          </ol>
+                                        <div class="col-md-12 col-12">
+                                            <ul class="fa-ul">
+                                            <li><span class="fa-li"><i class="fas fa-folder-open" style ="color: YellowGreen ;"></i></span>Demos
+                                              <ul class="fa-ul">
+                                                <li><span class="fa-li"><i class="fas fa-folder"></i></span>Chess</li>
+                                                <li><span class="fa-li"><i class="fas fa-folder"></i></span>Dungeon</li>
+                                                <li><span class="fa-li"><i class="fas fa-folder"></i></span>Minimal Hex</li>
+                                                <li><span class="fa-li"><i class="fas fa-folder"></i></span>Minimal Rect</li>
+                                                <li><span class="fa-li"><i class="fas fa-folder"></i></span>Path Visualizer</li>
+                                                <li><span class="fa-li"><i class="fas fa-folder"></i></span>Room Generation</li>
+                                                <li><span class="fa-li"><i class="fas fa-folder"></i></span>Sandbox Hex</li>
+                                                <li><span class="fa-li"><i class="fas fa-folder"></i></span>Sandbox Main</li>
+                                              </ul>
+                                            </li>
+                                          </ul>
                                         </div>
                                     </div><!--//row-->
+
+                                    <p>
+                                      The assets are organized by their use - "Runtime" contains all of the core scripts of the engine, "Editor" contains the editor scripts such as drawers, the welcome window and grid brushes, etc.
+                                    </p>
+
                                 </div><!--//section-block-->
                                 <!--
                                 <div id="step3"  class="section-block">
@@ -641,7 +709,7 @@ echo $y;
                                       <nav class="doc-sub-menu nav flex-column">
                                           <a class="nav-link scrollto" href="#step3-1">Introduction</a>
                                           <a class="nav-link scrollto" href="#step3-2">Importing the Asset</a>
-                                          <a class="nav-link scrollto" href="#step3-3">Install Dependencies</a>
+                                          <!--<a class="nav-link scrollto" href="#step3-3">Install Dependencies</a>-->
                                       </nav><!--//nav-->
                                       <a class="nav-link scrollto" href="#structure-section">Package Structure</a>
                                       <!--
