@@ -60,7 +60,7 @@
             <div class="container">
                 <div id="doc-header" class="doc-header text-center">
                     <h1 class="doc-title"><i class="icon_documents_alt icon"></i> Ultimate Grids Engine Documentation</h1>
-                    <div class="meta"><i class="far fa-clock"></i> Last updated: April 3rd, 2020</div>
+                    <div class="meta"><i class="far fa-clock"></i> Last updated: April 4th, 2020</div>
                 </div><!--//doc-header-->
                 <div class="doc-body row">
                     <div class="doc-content col-md-9 col-12 order-1">
@@ -85,7 +85,8 @@
                                 <div id="step2-1"  class="section-block">
                                     <h3 class="block-title">What's the Ultimate Grids Engine?</h3>
                                     <p>The Ultimate Grids Engine it’s a <b>framework</b> for grid-based games, which <b>allows you to create and populate grids with tiles and entities quickly and effortless</b>. Provides entities system, grid based movement, range and path finding algorithms, attack system, interactive objects, character controller examples, and a lot more.
-                                        <b>Supports Rectangle, Hexagon and Isometric grids for both 2D and 3D games</b>.
+                                    <br><br>
+                                    <b>Supports Rectangle, Hexagon and Isometric grids for both 2D and 3D games</b>.
                                     </p>
                                     <div class="section-block">
                                         <img style="max-width: 650px; height: auto;" class="img-fluid" src="assets/images/uge-images/image-1.jpg" alt="Ultimate Grids Engine" />
@@ -197,26 +198,26 @@
                                         <div class="col-md-12 col-12">
                                             <h6>To import the asset correctly, follow these steps:</h6>
                                             <ol class="list">
-                            <!-- Import Step 1 -->
-                            <li>Create a new project from Unity Hub, pick the latest <b>stable</b> version of Unity as your Unity version, and 2D or 3D as the Template.</li>
-                            <!-- Import Step 2 -->
-                            <li>Go to the Asset Store window and <b>import</b> the asset (it has to be in an empty project, not an existing one).</li>
-                            <!-- Import Step 3 -->
-                            <li>You will be warned that importing the asset will <b>overwrite</b> your current project settings (that’s normal), click on Import.</li>
-                            <!-- Import Step 4 -->
-                            <li>Once this is complete, you’ll most likely get a prompt saying “This Unity Package has Package Manager <b>dependencies</b>”. This is also normal, click on “Install/Upgrade”.</li>
-                            <!-- Import Step 5 -->
-                            <li>After that you’ll get a list of the contents of the engine, don’t touch anything, and click on Import in the bottom right corner.</li>
-                            <!-- Import Step7 -->
-                            <li>Import will take a while. Once import is complete, a welcome window should prompt (Fig. bellow) if it shows any dependencies are missing please click on install for each one and you’re ready to use the engine. Have fun!</li>
-                            <!-- Import Step7 -->
-                            <li>In the case you're getting errors on a fresh install follow this last step, else ignore it.
-                              <ul>
-                                <li>Go to the Window -> Package Manager.</li>
-                                <li>Install the "2D Tilemap Editor" and "Post Processing" packages.</li>
-                              </ul>
-                            </li>
-                          </ol>
+                                              <!-- Import Step 1 -->
+                                              <li>Create a new project from Unity Hub, pick the latest <b>stable</b> version of Unity as your Unity version, and 2D or 3D as the Template.</li>
+                                              <!-- Import Step 2 -->
+                                              <li>Go to the Asset Store window and <b>import</b> the asset (it has to be in an empty project, not an existing one).</li>
+                                              <!-- Import Step 3 -->
+                                              <li>You will be warned that importing the asset will <b>overwrite</b> your current project settings (that’s normal), click on Import.</li>
+                                              <!-- Import Step 4 -->
+                                              <li>Once this is complete, you’ll most likely get a prompt saying “This Unity Package has Package Manager <b>dependencies</b>”. This is also normal, click on “Install/Upgrade”.</li>
+                                              <!-- Import Step 5 -->
+                                              <li>After that you’ll get a list of the contents of the engine, don’t touch anything, and click on Import in the bottom right corner.</li>
+                                              <!-- Import Step7 -->
+                                              <li>Import will take a while. Once import is complete, a welcome window should prompt (Fig. bellow) if it shows any dependencies are missing please click on install for each one and you’re ready to use the engine. Have fun!</li>
+                                              <!-- Import Step7 -->
+                                              <li>In the case you're getting errors on a fresh install follow this last step, else ignore it.
+                                                <ul>
+                                                  <li>Go to the Window -> Package Manager.</li>
+                                                  <li>Install the "2D Tilemap Editor" and "Post Processing" packages.</li>
+                                                </ul>
+                                              </li>
+                                            </ol>
                                         </div>
                                     </div><!--//row-->
                                   <div align="center">
@@ -307,7 +308,7 @@
                                                 <li><span class="fa-li"><i class="fas fa-folder"></i></span>Path Visualizer</li>
                                                 <li><span class="fa-li"><i class="fas fa-folder"></i></span>Room Generation</li>
                                                 <li><span class="fa-li"><i class="fas fa-folder"></i></span>Sandbox Hex</li>
-                                                <li><span class="fa-li"><i class="fas fa-folder"></i></span>Sandbox Main</li>
+                                                <li><span class="fa-li"><i class="fas fa-folder"></i></span>Sandbox Rect</li>
                                               </ul>
                                             </li>
                                           </ul>
@@ -315,7 +316,7 @@
                                     </div><!--//row-->
 
                                     <p>
-                                      The assets are organized by their use - "Runtime" contains all of the core scripts of the engine, "Editor" contains the editor scripts such as drawers, the welcome window and grid brushes, etc.
+                                      "<b>Chess</b>" is a demo chess game, "<b>Dungeon</b>" verby noun game example, "<b>Minimal Hex</b>" minimal scene with the basic settings for a hexagon grid, "<b>Minimal Rect</b>" minimal scene with the basic settings for a rectangle grid with 4 directional movement, "<b>Path Visualizer</b>" demo showcasing the pathfinding algorithm (A*), "<b>Room Generation</b>" a demo showcasing how to add and more tiles and gridobjects at runtime from the script, "<b>Sandbox Hex</b>" basic hexagon level shocasing several features, "<b>Sandbox Rect</b>" basic rectangle level shocasing several features.
                                     </p>
 
                                 </div><!--//section-block-->
@@ -327,6 +328,22 @@
                                 </div>--><!--//section-block-->
 
                             </section><!--//doc-section-->
+
+                            <section id="concepts-section" class="doc-section">
+                                <h2 class="section-title">Base Concepts</h2>
+                                <div class="section-block">
+                                    <p>Thank you for your interest in this package! I’m sure it will serve you well and help you realize your game ideas in Unity!
+                                    <br>
+                                    <br>
+                                    In case you run into any problems or if you need any help with something related to this package, feel free to contact me at <b>gabrielrondonpersonal@gmail.com</b> or join the discord server using the button below.
+                                    </p>
+                                    <!--
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec imperdiet turpis. Curabitur aliquet pulvinar ultrices. Etiam at posuere leo. Proin ultrices ex et dapibus feugiat <a href="#">link example</a> aenean purus leo, faucibus at elit vel, aliquet scelerisque dui. Etiam quis elit euismod, imperdiet augue sit amet, imperdiet odio. Aenean sem erat, hendrerit  eu gravida id, dignissim ut ante. Nam consequat porttitor libero euismod congue.
+                                    </p>
+                                  -->
+                                    <a href="https://discord.gg/BT8Y8h9" class="btn btn-green" target="_blank"><i class="fab fa-discord"></i> Join Discord Now!</a>
+                                </div>
+                            </section><!--//introduction-section-->
 
                             <section id="code-section" class="doc-section">
                                 <h2 class="section-title">Code</h2>
@@ -719,27 +736,27 @@ echo $y;
                                           <a class="nav-link scrollto" href="#step4-2">Demos</a>
 
                                       </nav>--><!--//nav-->
-                                  <a class="nav-link scrollto" href="#conceps-section">Base Conceps</a>
+                                  <a class="nav-link scrollto" href="#concepts-section">Base Concepts</a>
                                   <a class="nav-link scrollto" href="#principles-section">Basic Principles</a>
                                     <nav class="doc-sub-menu nav flex-column">
-                                        <a class="nav-link scrollto" href="#html">How to create and Setup a Grid?</a>
-                                        <a class="nav-link scrollto" href="#css">How to create a Tile?</a>
-                                        <a class="nav-link scrollto" href="#sass">Adding tiles to the Grid</a>
-                                        <a class="nav-link scrollto" href="#less">How to create a Character/Object?</a>
-                                        <a class="nav-link scrollto" href="#javascript">Adding Objects to the Grid</a>
+                                        <a class="nav-link scrollto" href="#step6-1">How to create and Setup a Grid?</a>
+                                        <a class="nav-link scrollto" href="#step6-2">How to create a Tile?</a>
+                                        <a class="nav-link scrollto" href="#step6-3">Adding tiles to the Grid</a>
+                                        <a class="nav-link scrollto" href="#step6-4">How to create a Character/Object?</a>
+                                        <a class="nav-link scrollto" href="#step6-5">Adding Objects to the Grid</a>
                                     </nav><!--//nav-->
-                                    <a class="nav-link scrollto" href="#principles-section">Component Descriptions</a>
+                                    <a class="nav-link scrollto" href="#description-section">Component Descriptions</a>
                                       <nav class="doc-sub-menu nav flex-column">
-                                          <a class="nav-link scrollto" href="#html">GridManager</a>
-                                          <a class="nav-link scrollto" href="#css">GridTile</a>
-                                          <a class="nav-link scrollto" href="#sass">GridObject</a>
-                                          <a class="nav-link scrollto" href="#less">GridMovement</a>
-                                          <a class="nav-link scrollto" href="#javascript">GridMovement</a>
-                                          <a class="nav-link scrollto" href="#javascript">MouseDrivenController & GridPathfinder</a>
-                                          <a class="nav-link scrollto" href="#javascript">KeyboardBasedController</a>
-                                          <a class="nav-link scrollto" href="#javascript">AStar</a>
-                                          <a class="nav-link scrollto" href="#javascript">RangeAlgorithms</a>
-                                          <a class="nav-link scrollto" href="#javascript">Attack & AttackTrigger</a>
+                                          <a class="nav-link scrollto" href="#step7-1">GridManager</a>
+                                          <a class="nav-link scrollto" href="#step7-2">GridTile</a>
+                                          <a class="nav-link scrollto" href="#step7-3">GridObject</a>
+                                          <a class="nav-link scrollto" href="#step7-4">GridMovement</a>
+                                          <a class="nav-link scrollto" href="#step7-5">GridMovement</a>
+                                          <a class="nav-link scrollto" href="#step7-6">MouseDrivenController & GridPathfinder</a>
+                                          <a class="nav-link scrollto" href="#step7-7">KeyboardBasedController</a>
+                                          <a class="nav-link scrollto" href="#step7-8">AStar</a>
+                                          <a class="nav-link scrollto" href="#step7-9">RangeAlgorithms</a>
+                                          <a class="nav-link scrollto" href="#step7-10">Attack & AttackTrigger</a>
                                       </nav><!--//nav-->
                                       <!--
 	                                <a class="nav-link scrollto" href="#code-section">Code</a>
