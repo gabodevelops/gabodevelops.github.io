@@ -506,6 +506,70 @@
                                       </div>
                                     </div><!--//section-block-->
 
+                                    <div id="step6-4"  class="section-block">
+                                        <h3 class="block-title">Create a character and paint it on the Grid</h3>
+                                        <div class="col-md-12 col-12">
+                                            <h6>Creating a new Character:</h6>
+                                            <ol class="list">
+                                              <!--//Create the grid manager step-->
+                                              <li>Start by creating an empty gameobject in your scene. Ideally you’ll want to separate the components part from the visual part. The best possible hierarchy has the components on the root gameobject and the visual parts (model, sprite, etc) nested on a child gameobject usually named “ModelHolder”.</li>
+                                              <li>On your top level object, add the following components:</li>
+                                              <ul class="list">
+                                                <li><b>GridObject</b>: the core component, it handles grid positioning.</li>
+                                                <li><b>GridMovement</b>: handles the movement of the object, including movement time, cooldown, animations and animation curves.</li>
+                                                <li><b>MovementBlocker</b>: blocks other GridObjects from moving into your grid position. </li>
+                                                <li><b>Grid Objects Pivot Offset</b>: this is the offset position from the center of the tile where GridObjects will be positioned when <b>moving to or occupying this tile</b>.</li>
+                                                <li><b>Cost of Moving To Tile</b>: this is the cost of moving to this tile, used for pathfinding.</li>
+                                                <li><b>Manual Neighbors</b>: these are relative grid positions where this tile will try to find neighbors at besides the ones set on the GridManager.</li>
+                                              </ul>
+                                              <li>On your top level object, add a <b>BoxCollider</b>. Adjust its size to match your sprite/model dimensions. This is <b>used for mouse hovering detection</b>.</li>
+                                              <li>Drag the gameobject into the Project Window to <b>turn it into a prefab</b> and delete it from the scene hierarchy.</li>
+                                              <div align="center">
+                                                <img style="max-width: 720px; height: auto;" class="img-fluid" src="assets/images/uge-gifs/CreateAnewTileGIF.gif" alt="Creating a new Tile" />
+                                              </div>
+                                            </ol>
+                                        </div>
+                                        <br>
+
+                                        <div class="col-md-12 col-12">
+                                            <h6>Creating a Tile Collection:</h6>
+                                            <p>Now that we have a tile prefab we need to create a tile collection, you can add as many tiles to a collection as you want and you can have as many collections as you want, <b>tile collections allow you easily pick tiles from it and paint them to the scene</b>.
+                                            </p>
+                                            <ol class="list">
+                                              <!--//Create the grid manager step-->
+                                              <li>Right click inside your assets folder in the project window and click Create -> . Ideally you’ll want to separate the components part from the visual part. The best possible hierarchy has the components on the root gameobject and the visual parts (model, sprite, etc) nested on a child gameobject usually named “ModelHolder”.</li>
+                                              <div align="center">
+                                                <img style="max-width: 800px; height: auto;" class="img-fluid" src="assets/images/uge-images/CreateNewCollection.png" alt="Creating a new collection" />
+                                              </div>
+                                              <br>
+                                              <li>On the tile palette window select <b>UGE: GridTile Brush</b> on the brush dropdown, then on the <b>Active GridTile Collection</b> dropdown select the tile collection you created.</li>
+                                              <li>Click the Add GridTile button, <b>drag your tile prefab to the GridTile Prefab field</b> on the window that popped and <b>click Add</b>. Congratulations your has now being added to the collection.</li>
+                                              <div align="center">
+                                                <img style="max-width: 620px; height: auto;" class="img-fluid" src="assets/images/uge-gifs/AddTileToCollectionGIF.gif" alt="Adding tile to collection" />
+                                              </div>
+                                            </ol>
+                                        </div>
+                                        <br>
+
+                                        <div class="col-md-12 col-12">
+                                            <h6>Painting tiles on the Grid:</h6>
+                                            <ol class="list">
+                                              <!--//Create the grid manager step-->
+                                              <li>Select the GridManager gameobject on the scene's hierarchy and make sure that this is the gameobject which shows as the <b>Active Tilemap</b> on the Tile Palette.</li>
+                                              <li>On your Tile Palette window click on the tile you'd like to paint (in this case the one you just added).</li>
+                                              <li>Now you should be able to Paint, Erase and Move tiles on the grid using the Tile Palette's tools.</li>
+                                              <li>You can also modify the selected tile's settings such as Heigh in Grid, Position Offset and Rotation.</i>
+                                                <br>
+                                                <br>
+                                              <div align="center">
+                                                <!--<img style="max-width: 800px; height: auto;" class="img-fluid" src="assets/images/uge-images/CreateNewCollection.png" alt="Creating a new collection" />-->
+                                                <iframe width="800" height="450"
+                                                src="https://www.youtube.com/embed/tTkGWAU-WpA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                              </div>
+                                            </ol>
+                                        </div>
+                                      </div><!--//section-block-->
+
 
                                 <!--
                                 <div id="step3-3"  class="section-block">
@@ -770,7 +834,7 @@
                                   <a class="nav-link scrollto" href="#principles-section">Basic Principles</a>
                                     <nav class="doc-sub-menu nav flex-column">
                                         <a class="nav-link scrollto" href="#step6-1">Create a new Grid</a>
-                                        <a class="nav-link scrollto" href="#step6-2">Set up the Editor</a>
+                                        <a class="nav-link scrollto" href="#step6-2">Set up the Tile Palette</a>
                                         <a class="nav-link scrollto" href="#step6-3">Create a Tile and Paint It on the Grid</a>
                                         <a class="nav-link scrollto" href="#step6-4">Create a Character and Paint It on the Grid</a>
                                     </nav><!--//nav-->
