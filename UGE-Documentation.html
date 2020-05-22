@@ -572,19 +572,19 @@
                                 </div>--><!--//section-block-->
 
                             </section><!--//doc-section-->
-                            <section id="callouts-section" class="doc-section">
+                            <section id="faq-section" class="doc-section">
                                 <h2 class="section-title">Frequently Asked Questions</h2>
-                                <div class="section-block">
+                                <div id="step7-1" class="section-block">
                                       <h6>How do you instantiate tiles at runtime?</h6>
                                     <p>You can instantiate tiles at runtime by calling the method "InstantiateGridTile" on the GridManager, like this:  <code>GridManager.Instace.InstantiateGridTile(gridTilePrefab, gridPosition, heightInGrid, offsetPosition, rotation);</code>
                                     </p>
                                 </div>
-                                <div class="section-block">
+                                <div id="step7-2" class="section-block">
                                       <h6>How do you instantiate GridObjects at runtime?</h6>
                                     <p>You can instantiate tiles at runtime by calling the method "InstantiateGridObject" on the GridManager, like this: <code>GridManager.Instace.InstantiateGridObject(gridObjectPrefab, gridPosition, initialOrientation);</code>
                                     </p>
                                 </div>
-                                <div class="section-block">
+                                <div id="step7-3" class="section-block">
                                       <h6>How do you make a character move to another tile or grid position?</h6>
                                     <p>To try and make a character move you should call either the "TryToMove" or "TryMoveToPosition" methods on the GridMovement component attached to the character:
                                       <ul class="list">
@@ -597,7 +597,7 @@
                                       </ul>
                                     </p>
                                 </div>
-                                <div class="section-block">
+                                <div id="step7-4" class="section-block">
                                       <h6>How do you calculate a path?</h6>
                                       <p>You can calculate a path by using the "Search" method on the AStar class, passing the start tile and the target tile, it will return a list with the tiles in the path: <code>AStar.Search(startingGridTile, targetGridTile);</code>
                                     </p>
@@ -638,7 +638,7 @@
                                         <a class="nav-link scrollto" href="#step6-3">Create a Tile and Paint It on the Grid</a>
                                         <a class="nav-link scrollto" href="#step6-4">Create a Character and Paint It on the Grid</a>
                                     </nav><!--//nav-->
-                                    <a class="nav-link scrollto" href="#description-section">FAQ</a>
+                                    <a class="nav-link scrollto" href="#faq-section">FAQ</a>
                                       <nav class="doc-sub-menu nav flex-column">
                                           <a class="nav-link scrollto" href="#step7-1">How do you instantiate tiles at runtime?</a>
                                           <a class="nav-link scrollto" href="#step7-2">How do you instantiate GridObjects at runtime?</a>
