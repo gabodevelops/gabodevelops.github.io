@@ -510,22 +510,22 @@
                                         <h3 class="block-title">Create a character and paint it on the Grid</h3>
                                         <div class="col-md-12 col-12">
                                             <h6>Creating a new Character:</h6>
+                                            <p>We'll create a new character which pathfinds its way to the hovered tile every time you click, .
+                                            </p>
                                             <ol class="list">
                                               <!--//Create the grid manager step-->
                                               <li>Start by creating an empty gameobject in your scene. Ideally you’ll want to separate the components part from the visual part. The best possible hierarchy has the components on the root gameobject and the visual parts (model, sprite, etc) nested on a child gameobject usually named “ModelHolder”.</li>
                                               <li>On your top level object, add the following components:</li>
                                               <ul class="list">
-                                                <li><b>GridObject</b>: the core component, it handles grid positioning.</li>
+                                                <li><b>GridObject</b>: it handles grid positioning and glues everything together.</li>
                                                 <li><b>GridMovement</b>: handles the movement of the object, including movement time, cooldown, animations and animation curves.</li>
                                                 <li><b>MovementBlocker</b>: blocks other GridObjects from moving into your grid position. </li>
-                                                <li><b>Grid Objects Pivot Offset</b>: this is the offset position from the center of the tile where GridObjects will be positioned when <b>moving to or occupying this tile</b>.</li>
-                                                <li><b>Cost of Moving To Tile</b>: this is the cost of moving to this tile, used for pathfinding.</li>
-                                                <li><b>Manual Neighbors</b>: these are relative grid positions where this tile will try to find neighbors at besides the ones set on the GridManager.</li>
+                                                <li><b>CharacterPathfinder</b>: this component allows the character to pathfind towards a target tile.</li>
+                                                <li><b>MouseDrivenController</b>: whenever you click it sets a new destination for the CharacterPathfinder component.</li>
                                               </ul>
-                                              <li>On your top level object, add a <b>BoxCollider</b>. Adjust its size to match your sprite/model dimensions. This is <b>used for mouse hovering detection</b>.</li>
                                               <li>Drag the gameobject into the Project Window to <b>turn it into a prefab</b> and delete it from the scene hierarchy.</li>
                                               <div align="center">
-                                                <img style="max-width: 720px; height: auto;" class="img-fluid" src="assets/images/uge-gifs/CreateAnewTileGIF.gif" alt="Creating a new Tile" />
+                                                <img style="max-width: 720px; height: auto;" class="img-fluid" src="assets/images/uge-images/NewGridObject.png" alt="Creating a new GridObject" />
                                               </div>
                                             </ol>
                                         </div>
