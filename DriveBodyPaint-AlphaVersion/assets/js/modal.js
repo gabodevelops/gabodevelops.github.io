@@ -1,3 +1,4 @@
+/*
 $(document).ready(function(){
 
 $(".tabs").click(function(){
@@ -31,3 +32,4 @@ next_fs.css({
 });
 
 });
+*/
