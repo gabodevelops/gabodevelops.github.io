@@ -553,7 +553,7 @@
                            <!--<h6 style="font-size: 14px;text-align: center;" >Please provide your car details.</h6>-->
                            <h6 style="font-size: 14px;">Fill in your car details.<br></h6>
                         </center></div>
-                        <div class="col-md-12 col-sm-12 col-xs-12">
+                        <!--<div class="col-md-12 col-sm-12 col-xs-12">
                            <div class="form-group">
                              <label>Vehicle ID</label>
                              <div class="input-group">
@@ -561,14 +561,14 @@
                                 <span class="input-group-addon"><i class="fa fa-id-card"></i></span>
                              </div>
                            </div>
-                         <right>
+                         <right>-->
                            <!--
                            <div style="text-align: right;">
                             <a class="vin-image-link" id="vin-image-link" href="#myModal2" data-toggle="modal">Where's my VIN located<i class="fa fa-question"></i>  </a>
                            </div>
                            -->
-                         </right>
-                         </div>
+                         <!--</right>
+                       </div>-->
                          <div class="col-md-12 col-sm-12 col-xs-12">
                             <div class="form-group">
                               <label>Manufacturer and Model</label>
@@ -1015,7 +1015,7 @@
         Swal.fire({ title: 'Sending your quote request!', text: 'Wait a moment please', timerProgressBar: true, onBeforeOpen: () => { Swal.showLoading() }});
 
         // Collect data
-        var vehicleVin = document.getElementById('form-vin').value;
+        //var vehicleVin = document.getElementById('form-vin').value;
         var vehicleDescription = document.getElementById('form-description').value;
         var vehicleYear = document.getElementById('form-year').value;
         var photo_1 = img01;
@@ -1036,7 +1036,7 @@
         formData.append("Phone", clientPhone);
         formData.append("ZipCode", clientZipCode);
         formData.append("Repair_Location", repairmentLocation);
-        formData.append("Vehicle_VIN", vehicleVin);
+        //formData.append("Vehicle_VIN", vehicleVin);
         formData.append("Vehicle_Model", vehicleDescription);
         formData.append("Vehicle_Year", vehicleYear);
         formData.append("Photo_1", photo_1);
